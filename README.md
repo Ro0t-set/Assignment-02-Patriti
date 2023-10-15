@@ -2,54 +2,93 @@
 
 
 ## Use Cases
-- User Registration
-- User Authentication
-- E-Scooter Reservation
-- E-Scooter Pickup
-- E-Scooter Drop-off
-- User Account Management
-- E-Scooter Maintenance
-- E-Scooter Tracking
-- E-Scooter Station Management
-- Reporting Issues or Incidents
-- User Billing and Payments
+- **User Registration**: Users should be able to register for the service by providing their email and creating a secure password.
+
+- **User Authentication**: Registered users must be able to log in securely using their email and password.
+
+- **E-Scooter Reservation**: Users should have the option to reserve an e-scooter for a specific duration.
+
+- **E-Scooter Pickup**: Users should be able to locate and unlock an e-scooter using the app.
+
+- **E-Scooter Drop-off**: Users should be able to end their ride and securely lock the e-scooter, making it available for others.
+
+- **User Account Management**: Users should be able to manage their account, including profile updates and password resets.
+
+- **E-Scooter Maintenance**: The system should automate the regular collection, charging, and repair of e-scooters.
+
+- **E-Scooter Tracking**: The system must accurately track the location and status of all e-scooters.
+
+- **E-Scooter Station Management**: Administrators should be able to manage e-scooter stations, including adding, removing, or relocating them.
+
+- **Reporting Issues or Incidents**: Users should be able to report issues or incidents related to e-scooters, which administrators can review and resolve.
+
+- **User Billing and Payments**: The system should calculate fares and handle payments for users.
 
 ## User Stories
-- As a user, I want to register for the service using my email and password.
-- As a user, I want to log in to my account securely.
-- As a user, I want to find the nearest available e-scooter.
-- As a user, I want to reserve an e-scooter for a specific time.
-- As a user, I want to unlock an e-scooter using the app.
-- As a user, I want to end my ride and lock the e-scooter.
-- As a user, I want to view my ride history and receipts.
-- As a user, I want to report an issue with an e-scooter.
-- As an admin, I want to track the location and status of all e-scooters.
-- As an admin, I want to monitor the battery status of e-scooters.
-- As an admin, I want to track user activity and history.
+- *As a user*, I want to register for the service using my email and password, so I can start using e-scooters.
+
+- *As a user*, I want to log in to my account securely to access the service.
+
+- *As a user*, I want to find the nearest available e-scooter using the app.
+
+- *As a user*, I want to reserve an e-scooter for a specific time to ensure its availability.
+
+- *As a user*, I want to unlock an e-scooter using the app when I'm ready to start my ride.
+
+- *As a user*, I want to end my ride and lock the e-scooter securely when I'm finished.
+
+- *As a user*, I want to view my ride history and receipts for tracking my usage.
+
+- *As a user*, I want to report an issue with an e-scooter when I encounter problems.
+
+- *As an admin*, I want to track the location and status of all e-scooters for management purposes.
+
+- *As an admin*, I want to monitor the battery status of e-scooters to ensure their availability.
+
+- *As an admin*, I want to track user activity and history for administrative purposes.
 
 ## Domain Stories
-- Registration Flow (User signs up, verifies email, and sets a password).
-- Ride Lifecycle (User finds, reserves, unlocks, rides, and locks the e-scooter).
-- Maintenance Workflow (Regular collection, charging, and repairs of e-scooters).
-- Station Management (Adding, removing, or relocating e-scooter stations).
-- User Account Management (Profile updates, password reset, etc.).
-- Reporting and Issue Resolution (User reports an issue, admin reviews, and takes action).
-- Billing and Payment Processing (Calculating fares, handling payments).
+- *Registration Flow*: Users sign up, verify their email, and set a password to create their account.
+
+- *Ride Lifecycle*: Users find, reserve, unlock, ride, and lock e-scooters, completing the ride cycle.
+
+- *Maintenance Workflow*: The system automates the collection, charging, and repair of e-scooters to keep them in good condition.
+
+- *Station Management*: Administrators can manage e-scooter stations, including adding, removing, or relocating them.
+
+- *User Account Management*: Users can update their profiles and reset their passwords as needed.
+
+- *Reporting and Issue Resolution*: Users report issues, administrators review them, and take action to resolve problems.
+
+- *Billing and Payment Processing*: The system calculates fares and handles payments for users.
 
 ## Event Storms
-- User Registration Flow (Events: Registration, Verification, Password Set)
-- Ride Lifecycle Events (Events: Reservation, Unlock, Ride, Lock)
-- Maintenance Workflow Events (Events: Collection, Charging, Repair)
-- Station Management Events (Events: Station Added, Station Removed, Station Relocated)
-- User Account Management Events (Events: Profile Update, Password Reset)
-- Issue Reporting and Resolution Events (Events: Issue Report, Review, Resolution)
-- Billing and Payment Events (Events: Fare Calculation, Payment Process)
+- *User Registration Flow*: Events include Registration, Verification, and Password Set.
+
+- *Ride Lifecycle Events*: Events involve Reservation, Unlock, Ride, and Lock actions.
+
+- *Maintenance Workflow Events*: Events encompass Collection, Charging, and Repair processes.
+
+- *Station Management Events*: Events cover Station Added, Station Removed, and Station Relocated actions.
+
+- *User Account Management Events*: Events include Profile Update and Password Reset.
+
+- *Issue Reporting and Resolution Events*: Events consist of Issue Report, Review, and Resolution steps.
+
+- *Billing and Payment Events*: Events involve Fare Calculation and Payment Process stages.
 
 ## Quality Attribute Scenarios
-- **Performance:** The system should support concurrent user activity, ensuring quick e-scooter reservations and unlocks even during peak hours.
-- **Security:** User data and payment information must be stored securely, and only authenticated users should have access to e-scooters.
-- **Scalability:** The system should easily scale as more e-scooters and users are added.
-- **Reliability:** E-scooter availability and the accuracy of tracking data should be highly reliable.
-- **Usability:** The user app and company dashboard should be user-friendly and intuitive.
-- **Maintainability:** The system should be easy to maintain and update, and e-scooters should be efficiently serviced.
-- **Integration:** The system should integrate with payment gateways, mapping services, and e-scooter hardware for tracking and unlocking.
+- **Performance**: The system must support concurrent user activity, ensuring quick e-scooter reservations and unlocks even during peak hours.
+
+- **Security**: User data and payment information must be stored securely, and only authenticated users should have access to e-scooters.
+
+- **Scalability**: The system should easily scale as more e-scooters and users are added, accommodating growing demand.
+
+- **Reliability**: E-scooter availability and the accuracy of tracking data should be highly reliable to maintain user trust.
+
+- **Usability**: The user app and company dashboard should be user-friendly and intuitive to ensure a positive user experience.
+
+- **Maintainability**: The system should be easy to maintain and update, and e-scooters should be efficiently serviced to minimize downtime.
+
+- **Integration**: The system should seamlessly integrate with payment gateways, mapping services, and e-scooter hardware for tracking and unlocking, ensuring a cohesive user experience.
+
